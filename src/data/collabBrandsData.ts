@@ -1,9 +1,9 @@
-import collab1 from "../assets/collabs/image00001.png";
-import collab2 from "../assets/collabs/image00002.jpg";
-import collab3 from "../assets/collabs/image00003.png";
-import collab4 from "../assets/collabs/image00004.png";
-import collab5 from "../assets/collabs/image00005.png";
-import collab6 from "../assets/collabs/image00006.jpg";
+import collab1 from "../assets/collabs/collab (1).png";
+import collab2 from "../assets/collabs/collab (2).png";
+import collab3 from "../assets/collabs/collab (3).png";
+import collab4 from "../assets/collabs/collab (4).png";
+import collab5 from "../assets/collabs/collab (5).png";
+import collab6 from "../assets/collabs/collab (6).png";
 
 export interface CollabBrandsData {
   img: any;

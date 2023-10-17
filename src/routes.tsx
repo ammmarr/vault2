@@ -85,8 +85,6 @@ export const allRoutes = [
   },
 ];
 
-mainRoutes;
-
 export const socialMediaLinks = [
   {
     name: "Facebook",
