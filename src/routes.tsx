@@ -88,22 +88,22 @@ export const allRoutes = [
 export const socialMediaLinks = [
   {
     name: "Facebook",
-    href: "https://www.facebook.com/tazzweed",
+    href: "",
     icon: <FacebookRounded />,
   },
   {
     name: "instagram",
-    href: "https://www.instagram.com/tazzweed.ai/",
+    href: "",
     icon: <Instagram />,
   },
   {
     name: "twitter",
-    href: "https://twitter.com/tazzweedai",
+    href: "",
     icon: <Twitter />,
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/company/100752194/",
+    href: "",
     icon: <LinkedIn />,
   },
 ];

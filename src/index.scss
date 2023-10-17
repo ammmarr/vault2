@@ -50,7 +50,7 @@ h1 {
   text-align: center;
 }
 .iconBlack {
-  background-color: white;
+  background-color: var(--grey);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -69,7 +69,7 @@ h1 {
   }
   &:hover {
     path {
-      color: white;
+      color: var(--grey);
     }
     background-color: rgb(0, 0, 0);
   }
