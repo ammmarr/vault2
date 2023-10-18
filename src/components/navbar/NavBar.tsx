@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import logoBlack from "../../assets/logos/logo-black.png";
-import logoWhite from "../../assets/logos/logo-white.png";
+import logoBlack from "../../assets/logos/logo-black-icon.png";
+import logoWhite from "../../assets/logos/logo-red-icon.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import { mainRoutes } from "../../routes";
 import style from "./index.module.scss";
