@@ -6,6 +6,10 @@ import useWindowSize from "../../hooks/useWindowSize";
 import settings from "../../utils/sliderSettings";
 import style from "./index.module.scss";
 import "./style.css";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
+import { useRef } from "react";
+
 const ColloaboratedBrandsSection = () => {
   const [width, height] = useWindowSize();
   let numberofSlidesToShow = 5;
@@ -15,10 +19,31 @@ const ColloaboratedBrandsSection = () => {
   if (width < 630) {
     numberofSlidesToShow = 1;
   }
+  const sliderRef = useRef<Slider | null>(null);
+
+  const goToNextSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  const goToPrevSlide = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
 
   return (
     <div className={style.container}>
       <div className={style.mainTextSection}>
+        <div className={style.arrowContainerR} onClick={goToNextSlide}>
+          {" "}
+          <KeyboardDoubleArrowRightIcon className="iconBlack" />
+        </div>
+        <div className={style.arrowContainerL} onClick={goToPrevSlide}>
+          <KeyboardDoubleArrowLeftIcon className="iconBlack" />
+        </div>
+
         <Slider
           {...settings}
           autoplay={true}
@@ -27,6 +52,7 @@ const ColloaboratedBrandsSection = () => {
           lazyLoad="anticipated"
           slidesToShow={numberofSlidesToShow}
           className={style.collaboratedBrandSlider}
+          ref={(slider) => (sliderRef.current = slider)}
         >
           {collabBrandsData.map((item: any, i: number) => {
             return (

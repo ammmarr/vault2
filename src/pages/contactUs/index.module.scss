@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,6 +9,7 @@
     text-align: center;
     margin: 20vh 0 10vh 0;
     font-size: 30px;
+    color: var(--grey);
   }
   .contrastingColor {
     color: var(--green);
@@ -24,22 +25,26 @@
     gap: 10%;
     height: fit-content;
     padding: 30px;
+
     border: 1px solid black;
+    background-color: var(--grey);
     border-radius: 10px;
-    margin: 0 0 10% 0;
 
     .form {
-      width: 100%;
+      flex: 1;
       .formRow {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5%;
         margin: 20px 0;
+        width: 100%;
         .inputContainer {
           display: flex;
           flex-direction: column;
           gap: 20px;
+          width: 100%;
+          flex: 1;
 
           input {
             border: none;
@@ -47,7 +52,7 @@
             font-size: 1rem;
             border-bottom: 1px solid rgba(0, 0, 0, 0.5);
             outline: none;
-
+            background-color: transparent;
             &::placeholder {
               font-size: 10px;
             }
@@ -62,21 +67,23 @@
         gap: 20px;
         flex-direction: column;
         width: 100%;
-
+        height: max-content;
         label {
           font-weight: 600;
         }
         textarea {
           width: 100% !important;
           border: none;
-          height: 200px;
+          height: 100%;
           padding: 7px 0;
           font-size: 1rem;
           border-bottom: 1px solid black;
           border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-
+          background: transparent;
           outline: none;
-
+          height: 100%;
+          flex-grow: 1;
+          min-height: 40vh;
           &::placeholder {
             font-size: 10px;
           }
@@ -87,25 +94,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 20px;
         button {
-          background-color: var(--dark);
-          border: none;
-          outline: none;
-          padding: 10px;
-          width: fit-content;
-          text-align: center;
-          color: white;
-          margin: 20px 0;
-          cursor: pointer;
-          border-radius: 5px;
+          font-size: 20px;
         }
       }
     }
     .mapsWrapper {
       flex: 1;
-      height: 90vh;
+      height: 100%;
       width: 100%;
       overflow: hidden;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        overflow: hidden;
+        object-fit: cover;
+      }
     }
   }
 }

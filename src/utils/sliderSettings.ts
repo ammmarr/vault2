@@ -3,7 +3,7 @@ const settings = {
   infinite: true,
   speed: 1000,
   slidesToShow: 1,
-  slidesToScroll: 4,
+  slidesToScroll: 2,
 };
 
 export default settings;

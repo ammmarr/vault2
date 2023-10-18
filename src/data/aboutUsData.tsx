@@ -1,5 +1,5 @@
-import img1 from "../assets/imagesad textImages/leather.jpg";
-import img2 from "../assets/imagesad textImages/sound system.jpg";
+import img1 from "../assets/categoryImages/leather.jpg";
+import img2 from "../assets/categoryImages/sound system.jpg";
 import img3 from "../assets/imagesad textImages/leather.jpg";
 const aboutUsData = [
   {

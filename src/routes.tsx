@@ -13,6 +13,7 @@ import Product from "./pages/product/Product";
 import Products from "./pages/products/Products";
 import Terms from "./pages/terms of use/Terms";
 import Home from "./pages/home/Home";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
 export const mainRoutes = [
   {
@@ -25,10 +26,16 @@ export const mainRoutes = [
     href: "/products-and-services",
     element: <Products />,
   },
+
   {
     name: "Blog",
     href: "/blogs",
     element: <Blogs />,
+  },
+  {
+    name: "About Us",
+    href: "/about-us",
+    element: <AboutUs />,
   },
   {
     name: "Contact",
@@ -52,7 +59,11 @@ export const allRoutes = [
     href: "/blogs",
     element: <Blogs />,
   },
-
+  {
+    name: "About Us",
+    href: "/about-us",
+    element: <AboutUs />,
+  },
   {
     name: "blog",
     href: "/blog/:id",

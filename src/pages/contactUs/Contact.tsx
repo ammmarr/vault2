@@ -3,7 +3,9 @@ import * as yup from "yup";
 
 import transition from "../../utils/transitions/pageTransitions/PageTransitions";
 import style from "./index.module.scss";
-
+import img from "../../assets/backgroundImages/contact.jpg";
+import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/NavBar";
 const Contact = () => {
   const handleSubmit = async (data: any) => {
     console.log(data);
@@ -46,6 +48,7 @@ const Contact = () => {
 
   return (
     <>
+      <Navbar />
       <div className={style.container}>
         <h1>
           Send Us a Message<span className={style.contrastingColor}>!</span>
@@ -157,14 +160,16 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className={style.buttonContainer}>
-              <button> Submit</button>
+              <button className="button"> Submit</button>
             </div>
           </form>
           {/* <div className={style.mapsWrapper}>
             <Map />
+            <img src={img} />
           </div> */}
         </div>
       </div>
+      <Footer />
     </>
   );
 };
