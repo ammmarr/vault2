@@ -42,12 +42,14 @@
     height: fit-content;
     position: absolute;
     bottom: 0;
+    left: 0;
     min-width: 400px;
     background-color: var(--grey);
     border-radius: 10px;
     padding: 20px;
     transform: translateY(110%);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border: 1px solid var(--greenish);
   }
 }
 .open {
