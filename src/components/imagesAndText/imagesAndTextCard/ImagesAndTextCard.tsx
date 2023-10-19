@@ -17,7 +17,7 @@ const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
     <div className={style.wrapperr}>
       {displayedDirection == "left" && (
         <div className={style.imageContainer}>
-          <img src={data.img} />
+          <img src={data.image} />
         </div>
       )}
 
@@ -30,7 +30,7 @@ const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
       </div>
       {displayedDirection == "right" && (
         <div className={style.imageContainer}>
-          <img src={data.img} />
+          <img src={data.image} />
         </div>
       )}
     </div>

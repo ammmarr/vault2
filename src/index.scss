@@ -9,7 +9,7 @@ body,
   margin: 0;
   padding: 0;
   font-family: "Jost", sans-serif;
-  color: white;
+  color: inherit;
 }
 
 :root {
@@ -17,9 +17,10 @@ body,
   --red: #f22432;
   --grey: #e1dbdd;
   --greenish: #748c8c;
+  --darkGreen: #2f3b3b;
 }
 body {
-  background-color: var(--dark);
+  background: var(--dark);
 }
 .root {
   width: 100vw;
@@ -35,6 +36,11 @@ body {
   object-fit: contain;
   background-size: cover;
   background-position: center;
+}
+.gradientContainer {
+  padding: 15vh 0;
+
+  background: linear-gradient(90deg, var(--dark), var(--darkGreen));
 }
 
 /* Main Colors variables */
@@ -61,6 +67,7 @@ h1 {
   transition: all 0.3s ease !important;
   cursor: pointer;
   font-size: 3rem !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   path {
     transition: all 0.3s ease !important;
@@ -96,6 +103,7 @@ h1 {
   transition: all 0.3s ease;
   text-decoration: none;
   border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   &:hover {
     background-color: rgb(0, 0, 0);
     color: var(--grey);

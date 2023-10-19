@@ -22,8 +22,8 @@ export const mainRoutes = [
     element: <Home />,
   },
   {
-    name: "Products & Services",
-    href: "/products-and-services",
+    name: "Marketplace",
+    href: "/products",
     element: <Products />,
   },
 
@@ -50,8 +50,8 @@ export const allRoutes = [
     element: <Home />,
   },
   {
-    name: "Products & Services",
-    href: "/products-and-services",
+    name: "Products",
+    href: "/products",
     element: <Products />,
   },
   {

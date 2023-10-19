@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  .optionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+
+    .searchContainerBigScreen {
+      width: 100%;
+      height: 100%;
+      padding: 20px 0;
+      display: flex;
+      gap: 20px;
+      input {
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        color: black;
+        background-color: var(--grey);
+        &:active,
+        &:focus {
+          outline: 2px solid var(--greenish);
+        }
+      }
+      .button {
+        width: fit-content;
+        padding: 15px 20px;
+        font-weight: 200;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+        white-space: nowrap;
+        outline: none;
+        color: black;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        background-color: var(--grey);
+        &:hover {
+          transform: scale(0.95);
+          background-color: var(--greenish);
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          color: white;
+        }
+      }
+      input {
+        padding: 0 10px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .viewContainer {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 20px 0;
+
+    .iconBg {
+      width: fit-content;
+      padding: 10px;
+      cursor: pointer;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: 1px solid var(--grey);
+      border-radius: 10px;
+      color: var(--grey);
+    }
+  }
+  .productsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.blacked {
+  background-color: var(--dark);
+  svg {
+    color: var(--grey);
+  }
+}
+.brighted {
+  background-color: var(--grey);
+  svg {
+    color: var(--dark);
+  }
+}
+@media (max-width: 1000px) {
+  .button {
+    font-size: 10px !important;
+    padding: 0 3% !important;
+  }
+}
+@media (max-width: 600px) {
+  .searchContainerBigScreen {
+    display: none !important;
+  }
+}
