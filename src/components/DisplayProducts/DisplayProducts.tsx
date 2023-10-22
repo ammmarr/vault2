@@ -6,14 +6,15 @@ import FilterCard from "../filterCard/FilterCard";
 import ProductCard from "../productCard/ProductCard";
 import ProductCardSquare from "../productCard/productCardSquare/ProductCardSquare";
 import style from "./index.module.scss";
+import CheckboxCollection from "../filterCard/checkboxCollection/CheckboxCollection";
 
 interface DisplayProductsProps {
   data: any;
   onFilterChange: Function;
 }
 const DisplayProducts: React.FC<DisplayProductsProps> = (props) => {
-  const [gridView, setGridView] = useState(true);
   const { data, onFilterChange } = props;
+  const [gridView, setGridView] = useState(true);
   const location = useLocation();
   const navigate = useNavigate();
   const displayFilters = location.pathname != "/" ? true : false;
@@ -32,9 +33,12 @@ const DisplayProducts: React.FC<DisplayProductsProps> = (props) => {
   return (
     <div className={style.container}>
       <div className={style.optionContainer}>
-        {displayFilters && (
-          <FilterCard products={data} onFilterChange={onFilterChange} />
-        )}
+        <div className={style.popUpFilterContainer}>
+          {displayFilters && (
+            <FilterCard products={data} onFilterChange={onFilterChange} />
+          )}
+        </div>
+
         <div className={style.searchContainerBigScreen}>
           <input />
           <div className={style.button} onClick={handleClick}>
@@ -62,14 +66,19 @@ const DisplayProducts: React.FC<DisplayProductsProps> = (props) => {
           </div>
         )}
       </div>
-      <div className={style.productsContainer}>
-        {gridView
-          ? data.map((item: any, i: number) => (
-              <ProductCard data={item} key={i} />
-            ))
-          : data.map((item: any, i: number) => (
-              <ProductCardSquare data={item} key={i} />
-            ))}
+      <div className={style.productsAndFixedFilterContainer}>
+        <div className={style.fixedFilterContainer}>
+          <CheckboxCollection />
+        </div>
+        <div className={style.productsContainer}>
+          {gridView
+            ? data.map((item: any, i: number) => (
+                <ProductCard data={item} key={i} />
+              ))
+            : data.map((item: any, i: number) => (
+                <ProductCardSquare data={item} key={i} />
+              ))}
+        </div>
       </div>
 
       <div className={style.buttonContainer}>

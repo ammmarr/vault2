@@ -8,7 +8,7 @@ const Products = () => {
   const handleFilterChange = () => {};
   return (
     <>
-      <div className="gradientContainer">
+      <div className={style.container}>
         <Navbar />
         <div className={style.productsContainerAndFilter}>
           <DisplayProducts

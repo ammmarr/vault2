@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: stretch;
+  margin-top: 10vh;
   .optionContainer {
     width: 100%;
     display: flex;
@@ -20,12 +21,13 @@
       input {
         border-radius: 10px;
         outline: none;
-        border: none;
+        border: 1px solid var(--dark);
         color: black;
-        background-color: var(--grey);
+        background-color: white;
+        transition: all 0.2s ease;
         &:active,
         &:focus {
-          outline: 2px solid var(--greenish);
+          border: 2px solid var(--greenish);
         }
       }
       .button {
@@ -39,12 +41,13 @@
         gap: 5%;
         white-space: nowrap;
         outline: none;
-        color: black;
         cursor: pointer;
         border-radius: 10px;
         transition: all 0.3s ease-in-out;
         text-decoration: none;
-        background-color: var(--grey);
+        background-color: var(--dark);
+        color: white;
+
         &:hover {
           transform: scale(0.95);
           background-color: var(--greenish);
@@ -73,16 +76,33 @@
       padding: 10px;
       cursor: pointer;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      border: 1px solid var(--grey);
+      border: 1px solid var(--dark);
       border-radius: 10px;
       color: var(--grey);
     }
   }
-  .productsContainer {
-    width: 100%;
+  .productsAndFixedFilterContainer {
     display: flex;
+    gap: 30px;
+    margin-top: 5vh;
+    .productsContainer {
+      display: flex;
+      flex: 3;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .fixedFilterContainer {
+      flex: 1;
+      height: 100%;
+    }
+  }
+  .productsContainer {
+    display: flex;
+    flex: 3;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 3vh;
   }
   .buttonContainer {
     width: 100%;
@@ -97,15 +117,35 @@
   }
 }
 .brighted {
-  background-color: var(--grey);
+  background-color: white;
   svg {
     color: var(--dark);
   }
+}
+.popUpFilterContainer {
+  display: none;
 }
 @media (max-width: 1000px) {
   .button {
     font-size: 10px !important;
     padding: 0 3% !important;
+  }
+}
+@media (max-width: 800px) {
+  .viewContainer {
+    display: none !important;
+  }
+}
+@media (max-width: 750px) {
+  .popUpFilterContainer {
+    display: block;
+  }
+  .fixedFilterContainer {
+    display: none;
+  }
+  .productsContainer {
+    flex: none;
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
