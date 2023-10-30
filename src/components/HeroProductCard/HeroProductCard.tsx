@@ -3,7 +3,13 @@ import useGetData from "../../hooks/useGetData";
 // import WhatsappButton from "../whatsappButton/WhatsappButton";
 import style from "./index.module.scss";
 import productsData from "../../data/productsData.tsx";
-import img from "../../assets/categoryImages/sound system.jpg";
+import img1 from "../../assets/categoryImages/sound system.jpg";
+import img2 from "../../assets/categoryImages/leather.jpg";
+import img3 from "../../assets/officeImg.jpg";
+import img4 from "../../assets/sliderImg3.jpg";
+
+import { useState } from "react";
+import ProductImagesUI from "../ProductImagesUi/ProductImagesUI.tsx";
 // import Back from "../back Button/Back";
 const HeroProductCard = () => {
   const params = useParams();
@@ -20,14 +26,13 @@ const HeroProductCard = () => {
       ></p>
     );
   }
-  console.log(productsData[0], "data");
+  const productImages = [img1, img2, img3, img4];
   return (
     <>
       {productsData[0] && (
         <div className={style.container}>
-          <div className={style.imageContainer}>
-            <img src={img} />
-          </div>
+          <ProductImagesUI images={productImages} />
+
           <div className={style.textSection}>
             <div className={style.groupAndBack}>
               <h3 className={style.h3}>{productsData[0].name}</h3>

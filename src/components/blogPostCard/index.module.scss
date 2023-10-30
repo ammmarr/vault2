@@ -8,7 +8,7 @@
   transition: all 0.3s ease;
   margin: 5vh 0;
   cursor: pointer;
-
+  background-color: var(--white);
   .imageContainer {
     width: 30%;
     object-fit: cover;
@@ -37,6 +37,9 @@
       margin: 10px 0;
       text-align: start;
       color: var(--green);
+      &:hover {
+        text-decoration: underline;
+      }
     }
     h4 {
       margin-bottom: 20px;
@@ -68,8 +71,10 @@
   }
   &:hover {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    img {
-      transform: scale(1.05);
+    .imageContainer {
+      img {
+        transform: scale(1.05);
+      }
     }
   }
 }

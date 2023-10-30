@@ -10,9 +10,7 @@ const BloggerCard = ({ data }: any) => {
         <img src={img} />
       </div>
       <div className={style.textSection}>
-        <h4 onClick={() => navigate(`/blogs/blogger/blogger=${data.blogger}`)}>
-          Amir Negm
-        </h4>
+        <h4>Amir Negm</h4>
         {/* <p dangerouslySetInnerHTML={{ __html: data.blogger_bio }}></p> */}
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea odio,

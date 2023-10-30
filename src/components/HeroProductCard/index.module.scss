@@ -10,18 +10,7 @@
   max-width: 1500px;
   margin: 20vh 0;
   color: black;
-  .imageContainer {
-    flex: 1.1;
-    object-fit: cover;
-    overflow: hidden;
-    aspect-ratio: 1/1 !important;
-    img {
-      object-fit: contain;
-      width: 100%;
-      height: 100% !important;
-      transition: all 0.3s ease;
-    }
-  }
+
   .textSection {
     flex: 1;
     padding: 50px;
@@ -59,9 +48,6 @@
   }
   &:hover {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    img {
-      transform: scale(1.05);
-    }
   }
 }
 @media (max-width: 850px) {

@@ -8,7 +8,7 @@ const HeroBlogPost = ({ data }: any) => {
   const navigate = useNavigate();
   const handleComponentClick = (e: any) => {
     e.stopPropagation();
-    navigate(`/article/${data.name}`);
+    // navigate(`/article/${data.name}`);
   };
   return (
     <div className={style.container} onClick={(e) => handleComponentClick(e)}>
@@ -21,7 +21,12 @@ const HeroBlogPost = ({ data }: any) => {
           {/* <Back /> */}
         </div>
         <h3 className={style.h3}></h3>
-        <h1 className={style.h1}>Vault builds its super app with Jirlie</h1>
+        <h1
+          className={style.h1}
+          onClick={() => navigate(`/article/${data.name}`)}
+        >
+          Vault builds its super app with Jirlie
+        </h1>
         <h4
           onClick={() =>
             navigate(

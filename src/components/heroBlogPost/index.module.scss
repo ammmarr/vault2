@@ -8,6 +8,7 @@
   transition: all 0.3s ease;
   margin: 10vh 0;
   max-width: 1500px;
+  background-color: var(--white);
   cursor: pointer;
   .imageContainer {
     flex: 1.1;
@@ -32,7 +33,9 @@
       font-weight: 600;
       margin: 20px 0;
       text-align: start;
-      color: var(--green);
+      &:hover {
+        text-decoration: underline;
+      }
     }
     h4 {
       margin-bottom: 20px;
@@ -75,8 +78,10 @@
   }
   &:hover {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    img {
-      transform: scale(1.05);
+    .imageContainer {
+      img {
+        transform: scale(1.05);
+      }
     }
   }
   .bloggerCardContainer {

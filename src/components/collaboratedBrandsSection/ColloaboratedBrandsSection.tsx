@@ -32,7 +32,7 @@ const ColloaboratedBrandsSection = () => {
       sliderRef.current.slickPrev();
     }
   };
-
+  console.log(collabBrandsData);
   return (
     <div className={style.container}>
       <div className={style.mainTextSection}>

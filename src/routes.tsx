@@ -66,7 +66,7 @@ export const allRoutes = [
   },
   {
     name: "blog",
-    href: "/blog/:id",
+    href: "/article/:id",
     element: <Blog />,
   },
   {

@@ -16,7 +16,12 @@ const BlogPostCard: FC<any> = ({ data }) => {
         <img src={img} />
       </div>
       <div className={style.textSection}>
-        <h1 className={style.h1}>Vault builds its super app with Jirlie</h1>
+        <h1
+          className={style.h1}
+          onClick={() => navigate(`/article/${data.name}`)}
+        >
+          Vault builds its super app with Jirlie
+        </h1>
         <h4
           onClick={() =>
             navigate(
