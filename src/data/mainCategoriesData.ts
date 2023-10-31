@@ -1,4 +1,4 @@
-import image1 from "../assets/categoryImages/mobilitySectionImage.jfif";
+import image1 from "../assets/categoryImages/MobSectionImage.jfif";
 import image2 from "../assets/categoryImages/constructionCategoryImage.jpg";
 import image3 from "../assets/categoryImages/oilAndGasCategoryImage.jpg";
 
