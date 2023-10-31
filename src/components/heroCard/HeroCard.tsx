@@ -16,6 +16,7 @@ const HeroCard = () => {
     {
       bg: img2,
     },
+    s,
     // {
     //   bg: img3,
     // },
