@@ -1,4 +1,4 @@
-import image1 from "../assets/categoryImages/MobilitySectionImage.jfif";
+import image1 from "../assets/categoryImages/mobilitySectionImage.jfif";
 import image2 from "../assets/categoryImages/constructionCategoryImage.jpg";
 import image3 from "../assets/categoryImages/oilAndGasCategoryImage.jpg";
 
@@ -15,8 +15,8 @@ const mainCategoriesData = [
   },
   {
     image: image3,
-    title: "Industrial sector",
-    shortDescription: "Tanks, Tubes, FACTOIES, MILLS, Pipes…etc.",
+    title: "Industrial Sector",
+    shortDescription: "Tanks, Tubes, Factories, Mills, Pipes…etc.",
   },
 ];
 

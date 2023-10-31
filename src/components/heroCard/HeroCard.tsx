@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import img1 from "../../assets/sliderImg1.jpg";
-import img2 from "../../assets/sliderImg2.jpg";
-import img3 from "../../assets/sliderImg3.jpg";
+import img1 from "../../assets/backgroundImages/BG.jpg";
+import img2 from "../../assets/backgroundImages/BG.png";
+// import img3 from "../../assets/sliderImg3.jpg";
 import style from "./index.module.scss";
 import variants from "../../utils/variants";
 
@@ -16,9 +16,9 @@ const HeroCard = () => {
     {
       bg: img2,
     },
-    {
-      bg: img3,
-    },
+    // {
+    //   bg: img3,
+    // },
   ];
   useEffect(() => {
     const interval = setInterval(() => {

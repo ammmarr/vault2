@@ -5,7 +5,7 @@ import sound from "../../assets/categoryImages/stp.png";
 const YouMightLikeSection = () => {
   return (
     <div className={style.container}>
-      <h2>We are “vault”</h2>
+      <h2>We are “Vault”</h2>
       <p>
         the distributor of The Russian manufacturer of STP, ACV and more makers
         of amazing luxury brands in Egypt.
