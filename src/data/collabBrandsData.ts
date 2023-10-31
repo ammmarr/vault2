@@ -10,7 +10,7 @@ import collab9 from "../assets/collabs/collab (9).png";
 import collab10 from "../assets/collabs/collab (10).png";
 import collab11 from "../assets/collabs/collab (11).png";
 import collab12 from "../assets/collabs/collab (12).png";
-import collab13 from "../assets/collabs/collab (13).png";
+import collab13 from "../assets/collabs/collab(13).png";
 import collab14 from "../assets/collabs/collab (14).png";
 import collab15 from "../assets/collabs/collab (15).png";
 import collab16 from "../assets/collabs/collab (16).png";

@@ -13,7 +13,7 @@ const QuoteSection = () => {
         is to be recognized as a trailblazer and a role model for success in the
         luxury automotive sector.”
       </p>
-      <span>-CEO & Founder Of Vault</span>
+      <span>CEO & Founder Of Vault</span>
     </div>
   );
 };
