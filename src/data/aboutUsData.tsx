@@ -8,26 +8,25 @@ const aboutUsData = [
     content: (
       <ul>
         <li>
-          We are “vault” the distributor of The Russian manufacturer of STP, ACV
-          and more makers of amazing luxury brands in Egypt.
+          Vault is a distributor of luxury automotive brands in Egypt.
+          Established in 2019 in Dubai, UAE, we have expanded our business
+          portfolio to include Egypt. We represent the Russian manufacturer of
+          STP, ACV, and other amazing luxury brands.
         </li>
         <li>
-          Was established 2019 in Dubai - UAE expanded our business portfolio to
-          include Egypt.
+          Our products have been used by top brand automobiles, including Audi,
+          Bentley, Bugatti, Lamborghini, Porsche, Volkswagen, Jaguar Land Rover,
+          Ferrari, Maserati, BMW, and Mercedes-Benz. Vault Auto Solutions is
+          known for offering some of the most respected, prestigious, and iconic
+          value-added service products in the world.
         </li>{" "}
         <li>
-          Some products have been used for top brand automobiles including Audi,
-          Bentley, Bugatti, Lamborghini, Porsche, Volkswagen, Jaguar land rover,
-          Ferrari, Maserati, BMW and Mercedes-Benz.
+          We have earned a reputation for providing the best products for luxury
+          sports and premium performance vehicles in the Middle East,
+          particularly in the Gulf region. Our success is driven by our
+          unparalleled commitment to anticipating and supporting our customers'
+          needs.
         </li>{" "}
-        <li>
-          Vault auto solutions represents some of the most respected,
-          prestigious and iconic value-added service products in the world,
-          earning a reputation as best products for luxury sports and premium
-          performance vehicles in the middle east and especially in gulf region.
-          this, combined with our unparalleled commitment to anticipate and
-          support our customers’ needs, continues to drive our success.
-        </li>
       </ul>
     ),
   },

@@ -1,6 +1,6 @@
 import style from "./index.module.scss";
-import leather from "../../assets/categoryImages/leather.jpg";
-import sound from "../../assets/categoryImages/sound system.jpg";
+import isolationImage from "../../assets/categoryImages/isolationImage.jpg";
+import sound from "../../assets/categoryImages/stp.png";
 
 const YouMightLikeSection = () => {
   return (
@@ -9,15 +9,15 @@ const YouMightLikeSection = () => {
       <p>Our products are designed for everyone, environmentally friendly.</p>
       <div className={style.categoriesContainer}>
         <div className={style.categoryCard}>
-          <img src={leather}></img>
+          <img src={isolationImage}></img>
           <div className={style.buttonContainer}>
-            <div className="button">ISOLATION</div>
+            <div className="button">ACV</div>
           </div>
         </div>
         <div className={style.categoryCard}>
           <img src={sound}></img>
           <div className={style.buttonContainer}>
-            <div className="button">ISOLATION</div>
+            <div className="button">STP</div>
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@ import Products from "./pages/products/Products";
 import Terms from "./pages/terms of use/Terms";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import TikTokIcon from "./utils/costumIcons/TiktokIcon";
 
 export const mainRoutes = [
   {
@@ -99,22 +100,22 @@ export const allRoutes = [
 export const socialMediaLinks = [
   {
     name: "Facebook",
-    href: "",
+    href: "https://www.facebook.com/profile.php?id=61551113101287&mibextid=LQQJ4d",
     icon: <FacebookRounded />,
   },
   {
     name: "instagram",
-    href: "",
+    href: "https://instagram.com/vaultauto_egy",
     icon: <Instagram />,
   },
   {
-    name: "twitter",
-    href: "",
-    icon: <Twitter />,
+    name: "tiktok",
+    href: "https://www.tiktok.com/@vaultauto_egy?_t=8gwQsZNLZpu&_r=1",
+    icon: <TikTokIcon />,
   },
   {
     name: "LinkedIn",
-    href: "",
+    href: "https://www.linkedin.com/company/vault-auto-egy/",
     icon: <LinkedIn />,
   },
 ];

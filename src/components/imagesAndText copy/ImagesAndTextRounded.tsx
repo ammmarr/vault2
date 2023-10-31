@@ -6,7 +6,7 @@ import style from "./index.module.scss";
 const ImagesAndText = () => {
   const data = [...aboutUsData];
   const featuredData = data.slice(0, 3);
-  console.log(featuredData);
+
   return (
     <div className={style.container}>
       <ImagesAndTextCard direction="left" data={data[0]} key={1} />

@@ -77,7 +77,7 @@ const HeroCard = () => {
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          WELCOME TO UMINO
+          WELCOME TO VAULT
         </motion.span>
         <motion.h1
           variants={variants}

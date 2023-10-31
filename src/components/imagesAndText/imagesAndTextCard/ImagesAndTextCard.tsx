@@ -22,7 +22,7 @@ const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
       )}
 
       <div className={style.textContainer}>
-        <h2>{data.item_name}</h2>
+        <h2>{data.title}</h2>
         <p>{data.shortDescription}</p>
         <Link className="button" to={"/products"}>
           Learn more

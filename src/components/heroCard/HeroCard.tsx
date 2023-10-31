@@ -76,19 +76,20 @@ const HeroCard = () => {
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          The Holiday Shop
+          Vault Solutions
         </motion.span>
         <motion.h1
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          VAULT
+          The luxury you deserve
         </motion.h1>
         <motion.span
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          We are “vault” the distributor of The Russian manufacturer of STP, ACV
+          and more makers of amazing luxury brands in Egypt.
         </motion.span>
 
         <motion.div

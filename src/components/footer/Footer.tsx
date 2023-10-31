@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           {/* {% for news in category %} */}
           <div className={style.footerLast}>
-            <h3>Follow Us</h3>
+            <h3>Connect with Vault</h3>
             <div className={style.linksContainer}>
               {socialMediaLinks.map((link, i) => (
                 <div key={i} className={style.smLinkContainer}>
@@ -48,11 +48,16 @@ const Footer = () => {
           {" "}
           <a href="https://jirlie.com/">
             {" "}
-            *******************************************
-            ***************************** **********************
+            Powered by Jirlie Enterprise, digital business transformation
+            solution
           </a>
         </p>
-        <p>******************* ********************* </p>
+        <p>Registered from the Trade Register No.: 18805</p>
+
+        <p>
+          National establishment number: Unified commercial registry number
+          (10530 00001 88050)
+        </p>
       </div>
     </>
   );
