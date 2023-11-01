@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import img1 from "../../assets/backgroundImages/BG.jpg";
-import img2 from "../../assets/backgroundImages/BG.png";
-// import img3 from "../../assets/sliderImg3.jpg";
+import img2 from "../../assets/backgroundImages/bg3.png";
+import img3 from "../../assets/backgroundImages/BG2.jpg";
 import style from "./index.module.scss";
 import variants from "../../utils/variants";
 
@@ -17,9 +17,9 @@ const HeroCard = () => {
       bg: img2,
     },
 
-    // {
-    //   bg: img3,
-    // },
+    {
+      bg: img3,
+    },
   ];
   useEffect(() => {
     const interval = setInterval(() => {
@@ -73,12 +73,7 @@ const HeroCard = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.span
-          variants={variants}
-          transition={{ delay: 0, ease: "easeIn" }}
-        >
-          The luxury you deserve
-        </motion.span>
+        {" "}
         <motion.h1
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
@@ -88,8 +83,13 @@ const HeroCard = () => {
         <motion.span
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
+        >
+          The luxury you deserve
+        </motion.span>
+        <motion.span
+          variants={variants}
+          transition={{ delay: 0, ease: "easeIn" }}
         ></motion.span>
-
         <motion.div
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}

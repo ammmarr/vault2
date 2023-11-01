@@ -1,6 +1,6 @@
 import style from "./index.module.scss";
 import stp from "../../assets/categoryImages/AeroFlex.jpg";
-import sound from "../../assets/categoryImages/stp.png";
+import sound from "../../assets/categoryImages/Acv pic.jpg";
 
 const YouMightLikeSection = () => {
   return (
