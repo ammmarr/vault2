@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 interface ImagesAndTextCards {
   data?: any;
   direction: "left" | "right";
+  color?: string;
 }
 
-const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
+const ImagesAndTextCardRounded: FC<ImagesAndTextCards> = ({
+  direction,
+  data,
+}) => {
   const width = window.innerWidth;
   let displayedDirection = direction.slice();
 
@@ -21,7 +25,10 @@ const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
         </div>
       )}
 
-      <div className={style.textContainer}>
+      <div
+        className={style.textContainer}
+        style={{ background: data.backgroundColor }}
+      >
         <h2>{data.title}</h2>
         {data.content}
         {/* <p>{data.shortDescription}</p> */}
@@ -38,4 +45,4 @@ const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
   );
 };
 
-export default ImagesAndTextCard;
+export default ImagesAndTextCardRounded;

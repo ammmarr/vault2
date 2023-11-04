@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import img1 from "../../assets/sliderImg1.jpg";
 import img2 from "../../assets/sliderImg2.jpg";
 import img3 from "../../assets/sliderImg3.jpg";
-import bg from "../../assets/backgroundImages/aboutus.jpg";
+import bg from "../../assets/backgroundImages/front view.jfif";
 import style from "./index.module.scss";
 import variants from "../../utils/variants";
 
@@ -83,16 +83,14 @@ const HeroCard = () => {
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          Our Perfect Store
+          Your premier distributor of luxury automotive brands in Egypt!
         </motion.h1>
-        <motion.span
+        {/* <motion.span
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          Over 20 years of experience, we have crafted thousands of strategic
-          discovery process that enables us to peel back the layers which enable
-          us to understand, connect.
-        </motion.span>
+          Your premier distributor of luxury automotive brands in Egypt!
+        </motion.span> */}
         {/* 
         <motion.div
           variants={variants}

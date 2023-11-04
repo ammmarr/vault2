@@ -8,7 +8,7 @@ const ImagesAndText = () => {
   const featuredData = data.slice(0, 3);
   return (
     <div className={style.container}>
-      <ImagesAndTextCard direction="left" data={data[0]} key={1} />
+      <ImagesAndTextCard direction="left" data={data[0]} key={1} color="red" />
       <ImagesAndTextCard direction="right" data={data[1]} key={2} />
       <ImagesAndTextCard direction="left" data={data[2]} key={3} />
       {/* <div className={style.buttonContainer}>

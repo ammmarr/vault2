@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 interface ImagesAndTextCards {
   data?: any;
   direction: "left" | "right";
+  color?: string;
 }
 
-const ImagesAndTextCard: FC<ImagesAndTextCards> = ({ direction, data }) => {
+const ImagesAndTextCard: FC<ImagesAndTextCards> = ({
+  direction,
+  data,
+  color,
+}) => {
   const width = window.innerWidth;
   let displayedDirection = direction.slice();
 
