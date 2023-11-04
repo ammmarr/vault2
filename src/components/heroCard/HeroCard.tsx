@@ -2,7 +2,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import img1 from "../../assets/backgroundImages/bg5.jpeg";
 import img2 from "../../assets/categoryImages/leather.jpg";
-import img3 from "../../assets/backgroundImages/sound.jpg";
+import img3 from "../../assets/backgroundImages/BG.jpg";
+import img4 from "../../assets/backgroundImages/bg4.jpg";
+
 import style from "./index.module.scss";
 import variants from "../../utils/variants";
 
@@ -23,6 +25,11 @@ const HeroCard = () => {
 
     {
       bg: img3,
+      h1: "Vault solutions",
+      h2: "The Luxury you Deserve",
+    },
+    {
+      bg: img4,
       h1: "Vault solutions",
       h2: "The Luxury you Deserve",
     },

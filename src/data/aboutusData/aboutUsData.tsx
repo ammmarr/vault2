@@ -1,6 +1,7 @@
 import mission from "../../assets/categoryImages/target (4).png";
 import vision from "../../assets/categoryImages/vision (3).png";
 import values from "../../assets/categoryImages/work.png";
+import aboutus from "../../assets/categoryImages/enterprise (3).png";
 import style from "./index.module.scss";
 {
   /* <ul>
@@ -31,10 +32,16 @@ import style from "./index.module.scss";
 const aboutUsData = [
   {
     title: "About The Company",
-    img: mission,
+    img: aboutus,
     backgroundColor: "#748c8c",
     content: (
-      <p style={{ fontSize: "1.5rem", textTransform: "lowercase" }}>
+      <p
+        style={{
+          fontSize: "1.5rem",
+          textTransform: "lowercase",
+          textAlign: "center",
+        }}
+      >
         Your premier distributor of luxury automotive brands in Egypt! Since our
         establishment in 2019 in Dubai, UAE, we have expanded our operations to
         bring the finest products to the Egyptian market. We proudly represent
@@ -58,7 +65,7 @@ const aboutUsData = [
     backgroundColor: "#be2424 ",
 
     content: (
-      <p>
+      <p style={{ textAlign: "center" }}>
         Our mission is to fulfill our customers' desires for luxury and cater to
         their diverse needs by offering a more comfortable and noise-free
         environment. We prioritize the comfort and tranquility of our customers
@@ -71,7 +78,7 @@ const aboutUsData = [
     img: vision,
     backgroundColor: "#002630",
     content: (
-      <p>
+      <p style={{ textAlign: "center" }}>
         To be the leading market leaders offering the comfort and upgrading
         solutions, offering a wide range of high-quality products that ensure
         utmost comfort and tranquility for our valued customers
@@ -88,23 +95,23 @@ const aboutUsData = [
         className={style.smart}
       >
         <li>
-          <span style={{ fontSize: "3rem", color: "var(--darkGreen)" }}>S</span>
+          <span style={{ fontSize: "3rem", color: "#be2424 " }}>S</span>
           afety
         </li>
         <li>
-          <span style={{ fontSize: "3rem", color: "var(--darkGreen)" }}>M</span>
+          <span style={{ fontSize: "3rem", color: "#be2424 " }}>M</span>
           orality
         </li>
         <li>
-          <span style={{ fontSize: "3rem", color: "var(--darkGreen)" }}>A</span>
+          <span style={{ fontSize: "3rem", color: "#be2424 " }}>A</span>
           bility
         </li>
         <li>
-          <span style={{ fontSize: "3rem", color: "var(--darkGreen)" }}>R</span>
+          <span style={{ fontSize: "3rem", color: "#be2424 " }}>R</span>
           eliability
         </li>
         <li>
-          <span style={{ fontSize: "3rem", color: "var(--darkGreen)" }}>T</span>
+          <span style={{ fontSize: "3rem", color: "#be2424 " }}>T</span>
           rustworthy
         </li>
       </ul>

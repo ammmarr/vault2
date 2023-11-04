@@ -27,7 +27,7 @@ const ImagesAndTextCardRounded: FC<ImagesAndTextCards> = ({
 
       <div
         className={style.textContainer}
-        style={{ background: data.backgroundColor }}
+        // style={{ background: data.backgroundColor }}
       >
         <h2>{data.title}</h2>
         {data.content}
