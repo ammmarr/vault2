@@ -45,7 +45,7 @@ export const servicesBackgroundImages = [
   {
     bg: img1,
     h1: "Our Services",
-    h2: "The Luxury you Deserve",
+    h2: "Your perfect experience",
   },
   {
     bg: img2,

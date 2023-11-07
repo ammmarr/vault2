@@ -54,7 +54,11 @@ const Navbar = () => {
       </div>
       <div className={style.displayLinks}>
         {mainRoutes.map((item: any, key: number) => (
-          <Link to={item.href} className="button" key={key}>
+          <Link
+            to={item.href}
+            className={`button ${style.navbarItem}`}
+            key={key}
+          >
             {item.name}
           </Link>
         ))}

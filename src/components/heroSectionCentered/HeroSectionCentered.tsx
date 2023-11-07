@@ -1,42 +1,27 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import img1 from "../../assets/sliderImg1.jpg";
-import img2 from "../../assets/sliderImg2.jpg";
-import img3 from "../../assets/sliderImg3.jpg";
-import bg from "../../assets/backgroundImages/front view.jfif";
-import style from "./index.module.scss";
 import variants from "../../utils/variants";
+import style from "./index.module.scss";
 
-const HeroCard = () => {
+const HeroSectionCentered = ({ data }: any) => {
   const [counter, setCounter] = useState(0);
 
-  //   const heroSectionCardsData = [
-  //     {
-  //       bg: img1,
-  //     },
-  //     {
-  //       bg: img2,
-  //     },
-  //     {
-  //       bg: img3,
-  //     },
-  //   ];
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       setCounter((prev) => {
-  //         if (prev == heroSectionCardsData.length - 1) {
-  //           return 0;
-  //         }
-  //         return prev + 1;
-  //       });
-  //     }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((prev) => {
+        if (prev == data.length - 1) {
+          return 0;
+        }
+        return prev + 1;
+      });
+    }, 5000);
 
-  //     return () => {
-  //       clearInterval(interval);
-  //     };
-  //   }, []);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
-  //   const { bg } = heroSectionCardsData[counter];
+  const { bg, h1, h2 } = data[counter];
 
   return (
     <motion.div className={style.container}>
@@ -77,13 +62,13 @@ const HeroCard = () => {
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          WELCOME TO VAULT
+          {h1}
         </motion.span>
         <motion.h1
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
-          Your premier distributor of luxury automotive brands in Egypt!
+          {h2}
         </motion.h1>
         {/* <motion.span
           variants={variants}
@@ -104,4 +89,4 @@ const HeroCard = () => {
   );
 };
 
-export default HeroCard;
+export default HeroSectionCentered;

@@ -17,9 +17,13 @@
       height: 100%;
     }
   }
+
   .displayLinks {
     display: flex;
     gap: 20px;
+  }
+  .navbarItem {
+    background-color: var(--grey);
   }
   .searchAndCart {
     display: flex;
@@ -94,11 +98,11 @@
     transition: all 0.2s ease;
 
     &:hover {
-      color: #ca9c5e;
+      color: white;
     }
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
   .menuIcon {
     display: block !important;
   }
