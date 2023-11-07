@@ -44,12 +44,12 @@ import img2 from "../assets/backgroundImages/demo.jpg";
 export const servicesBackgroundImages = [
   {
     bg: img1,
-    h1: "Vault solutions",
+    h1: "Our Services",
     h2: "The Luxury you Deserve",
   },
   {
     bg: img2,
-    h1: "Vault solutions",
-    h2: "The Luxury you Deserve",
+    h1: "Our Services",
+    h2: "Your perfect experience",
   },
 ];
