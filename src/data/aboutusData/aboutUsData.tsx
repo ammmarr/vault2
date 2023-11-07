@@ -38,7 +38,6 @@ const aboutUsData = [
       <p
         style={{
           fontSize: "1.5rem",
-          textTransform: "lowercase",
           textAlign: "center",
         }}
       >

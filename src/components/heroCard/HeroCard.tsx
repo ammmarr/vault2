@@ -1,43 +1,16 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import img1 from "../../assets/backgroundImages/bg5.jpeg";
-import img2 from "../../assets/categoryImages/leather.jpg";
-import img3 from "../../assets/backgroundImages/BG.jpg";
-import img4 from "../../assets/backgroundImages/BG2.jpg";
 
 import style from "./index.module.scss";
 import variants from "../../utils/variants";
 
-const HeroCard = () => {
+const HeroCard = ({ data }: any) => {
   const [counter, setCounter] = useState(0);
 
-  const heroSectionCardsData = [
-    {
-      bg: img1,
-      h1: "Vault solutions",
-      h2: "The Luxury you Deserve",
-    },
-    {
-      bg: img2,
-      h1: "Vault solutions",
-      h2: "The Luxury you Deserve",
-    },
-
-    {
-      bg: img3,
-      h1: "Vault solutions",
-      h2: "The Luxury you Deserve",
-    },
-    {
-      bg: img4,
-      h1: "Vault solutions",
-      h2: "The Luxury you Deserve",
-    },
-  ];
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prev) => {
-        if (prev == heroSectionCardsData.length - 1) {
+        if (prev == data.length - 1) {
           return 0;
         }
         return prev + 1;
@@ -49,7 +22,7 @@ const HeroCard = () => {
     };
   }, []);
 
-  const { bg, h1, h2 } = heroSectionCardsData[counter];
+  const { bg, h1, h2 } = data[counter];
 
   return (
     <motion.div className={style.container}>

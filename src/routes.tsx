@@ -15,6 +15,7 @@ import Terms from "./pages/terms of use/Terms";
 import Home from "./pages/home/Home";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import TikTokIcon from "./utils/costumIcons/TiktokIcon";
+import Services from "./pages/services/Services";
 
 export const mainRoutes = [
   {
@@ -23,11 +24,15 @@ export const mainRoutes = [
     element: <Home />,
   },
   {
-    name: "Marketplace",
+    name: "Products",
     href: "/products",
     element: <Products />,
   },
-
+  {
+    name: "Services",
+    href: "/services",
+    element: <Services />,
+  },
   {
     name: "Blog",
     href: "/blogs",
@@ -54,6 +59,11 @@ export const allRoutes = [
     name: "Products",
     href: "/products",
     element: <Products />,
+  },
+  {
+    name: "Services",
+    href: "/services",
+    element: <Services />,
   },
   {
     name: "Blog",
