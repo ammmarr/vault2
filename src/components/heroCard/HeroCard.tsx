@@ -1,16 +1,21 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
-
-import style from "./index.module.scss";
 import variants from "../../utils/variants";
-
+import style from "./index.module.scss";
+// interface HeroCardProps {
+//   h1: string;
+//   h2: string;
+//   h3: string;
+//   p: string;
+//   bg: string;
+// }
 const HeroCard = ({ data }: any) => {
   const [counter, setCounter] = useState(0);
-
+  const heroSectionCardsData = [...data];
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prev) => {
-        if (prev == data.length - 1) {
+        if (prev == heroSectionCardsData.length - 1) {
           return 0;
         }
         return prev + 1;
@@ -22,11 +27,17 @@ const HeroCard = ({ data }: any) => {
     };
   }, []);
 
-  const { bg, h1, h2 } = data[counter];
+  const { h1, h2, bg } = heroSectionCardsData[counter];
 
   return (
-    <motion.div className={style.container}>
-      <div className={style.fade} />
+    <motion.div
+      className={style.container}
+      // initial={{ opacity: 0 }}
+      // animate={{ opacity: 1 }}
+      // exit={{ opacity: 0 }}
+      // transition={{ duration: 1, ease: "easeOut" }}
+      // key={counter}
+    >
       <AnimatePresence>
         <motion.div
           className={style.imgContainer}
@@ -38,52 +49,57 @@ const HeroCard = ({ data }: any) => {
         >
           <motion.img src={bg} />
         </motion.div>
-
-        <motion.div
-          className={style.textContainer}
-          variants={{
-            hidden: {
-              opacity: 0,
-              y: 20,
-            },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                staggerChildren: 0.5,
-                duration: 0.7,
-              },
-            },
-          }}
-          initial="hidden"
-          animate="visible"
-        >
-          {" "}
-          <motion.h1
-            variants={variants}
-            transition={{ delay: 0, ease: "easeIn" }}
-          >
-            {h1}
-          </motion.h1>
-          <motion.span
-            variants={variants}
-            transition={{ delay: 0, ease: "easeIn" }}
-          >
-            {h2}
-          </motion.span>
-          <motion.span
-            variants={variants}
-            transition={{ delay: 0, ease: "easeIn" }}
-          ></motion.span>
-          <motion.div
-            variants={variants}
-            transition={{ delay: 0, ease: "easeIn" }}
-            className={style.buttonContainer}
-          >
-            <div className="button">EXPLORE NOW</div>
-          </motion.div>
-        </motion.div>
       </AnimatePresence>
+
+      <motion.div
+        className={style.textContainer}
+        variants={{
+          hidden: {
+            opacity: 0,
+            x: 100,
+          },
+          visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+              staggerChildren: 0.5,
+              duration: 0.7,
+            },
+          },
+        }}
+        initial="hidden"
+        animate="visible"
+        key={counter}
+      >
+        <motion.h1
+          variants={variants}
+          transition={{ delay: 0, ease: "easeIn" }}
+        >
+          {h1}
+        </motion.h1>
+        <motion.h1
+          variants={variants}
+          transition={{ delay: 0, ease: "easeIn" }}
+        >
+          {h2}
+        </motion.h1>
+        {/* <motion.h1
+          variants={variants}
+          transition={{ delay: 0, ease: "easeIn" }}
+        >
+          {h3}
+        </motion.h1> */}
+        {/* <motion.p variants={variants} transition={{ delay: 0, ease: "easeIn" }}>
+          {p}
+        </motion.p> */}
+        <motion.div
+          variants={variants}
+          transition={{ delay: 0, ease: "easeIn" }}
+          className={style.buttonContainer}
+        >
+          <div className="button">EXPLORE NOW</div>
+        </motion.div>
+      </motion.div>
     </motion.div>
   );
 };

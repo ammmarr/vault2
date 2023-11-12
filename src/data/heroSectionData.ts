@@ -7,23 +7,24 @@ const heroSectionCardsData = [
   {
     bg: img1,
     h1: "Vault solutions",
-    h2: "The Luxury you Deserve",
+    h2: "The only car Services you need",
+    link: "",
   },
   {
     bg: img2,
     h1: "Vault solutions",
-    h2: "The Luxury you Deserve",
+    h2: "The Best Insulation materials on the market",
   },
 
   {
     bg: img3,
-    h1: "Vault solutions",
+    h1: "Vault solutsadaions",
     h2: "The Luxury you Deserve",
   },
   {
     bg: img4,
-    h1: "Vault solutions",
-    h2: "The Luxury you Deserve",
+    h1: "Vault solutiasdsaons",
+    h2: "Find your preferred sound systems",
   },
 ];
 export default heroSectionCardsData;
