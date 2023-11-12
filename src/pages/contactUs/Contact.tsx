@@ -68,7 +68,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className={style.input}
-                  placeholder="name"
+                  placeholder="Enter your Name"
                   name="full_name"
                   id="full_name"
                   onBlur={formik.handleBlur}
@@ -111,7 +111,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className={style.input}
-                  placeholder="EnterYour Phone"
+                  placeholder="Enter your Phone"
                   name="phone"
                   id="phone"
                   onBlur={formik.handleBlur}
@@ -132,7 +132,7 @@ const Contact = () => {
                 <input
                   type="text"
                   className={style.input}
-                  placeholder="Enter your company's name"
+                  placeholder="Enter your Company's Name"
                   name="company"
                   id="company"
                   onBlur={formik.handleBlur}
@@ -151,7 +151,7 @@ const Contact = () => {
                 ) : null}
               </label>
               <textarea
-                placeholder="Enter your description"
+                placeholder="Enter your Message"
                 name="description"
                 id="description"
                 onBlur={formik.handleBlur}

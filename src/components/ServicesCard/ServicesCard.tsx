@@ -4,7 +4,7 @@ const ServicesCard = ({ data }: any) => {
   console.log(data);
   return (
     <div className={style.container}>
-      <img src={demo} className={style.cardImg} />
+      <img src={data.img} className={style.cardImg} />
       <div className={style.fade} />
       <div className={style.descContainer}>
         <h3>{data.title}</h3>
