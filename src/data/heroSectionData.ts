@@ -7,7 +7,7 @@ const heroSectionCardsData = [
   {
     bg: img1,
     h1: "Vault Solutions",
-    h2: "The only car Services you need",
+    h2: "The sole car services essential for you.",
     link: "Explore Services",
   },
   {
@@ -26,7 +26,7 @@ const heroSectionCardsData = [
   {
     bg: img4,
     h1: "Vault Solutions",
-    h2: "Find your preferred sound systems",
+    h2: "Find the sound systems that best fit your liking.",
     link: "Explore sound Systems",
   },
 ];
