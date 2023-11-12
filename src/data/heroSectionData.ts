@@ -6,25 +6,28 @@ import img4 from "../assets/backgroundImages/BG2.jpg";
 const heroSectionCardsData = [
   {
     bg: img1,
-    h1: "Vault solutions",
+    h1: "Vault Solutions",
     h2: "The only car Services you need",
-    link: "",
+    link: "Explore Services",
   },
   {
     bg: img2,
-    h1: "Vault solutions",
+    h1: "Vault Solutions",
     h2: "The Best Insulation materials on the market",
+    link: "Explore Insulation materials",
   },
 
   {
     bg: img3,
-    h1: "Vault solutsadaions",
+    h1: "Vault Solutions",
     h2: "The Luxury you Deserve",
+    link: "Explore Luxury products",
   },
   {
     bg: img4,
-    h1: "Vault solutiasdsaons",
+    h1: "Vault Solutions",
     h2: "Find your preferred sound systems",
+    link: "Explore sound Systems",
   },
 ];
 export default heroSectionCardsData;

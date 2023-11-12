@@ -27,7 +27,7 @@ const HeroCard = ({ data }: any) => {
     };
   }, []);
 
-  const { h1, h2, bg } = heroSectionCardsData[counter];
+  const { h1, h2, bg, link } = heroSectionCardsData[counter];
 
   return (
     <motion.div
@@ -77,12 +77,12 @@ const HeroCard = ({ data }: any) => {
         >
           {h1}
         </motion.h1>
-        <motion.h1
+        <motion.h2
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
         >
           {h2}
-        </motion.h1>
+        </motion.h2>
         {/* <motion.h1
           variants={variants}
           transition={{ delay: 0, ease: "easeIn" }}
@@ -97,7 +97,7 @@ const HeroCard = ({ data }: any) => {
           transition={{ delay: 0, ease: "easeIn" }}
           className={style.buttonContainer}
         >
-          <div className="button">EXPLORE NOW</div>
+          <div className="button">{link}</div>
         </motion.div>
       </motion.div>
     </motion.div>
