@@ -5,6 +5,12 @@ import img4 from "../assets/backgroundImages/BG2.jpg";
 
 const heroSectionCardsData = [
   {
+    bg: img3,
+    h1: "Vault Solutions",
+    h2: "The Luxury you Deserve",
+    link: "Explore Luxury products",
+  },
+  {
     bg: img1,
     h1: "Vault Solutions",
     h2: "The sole car services essential for you.",
@@ -15,13 +21,6 @@ const heroSectionCardsData = [
     h1: "Vault Solutions",
     h2: "The Best Insulation materials on the market",
     link: "Explore Insulation materials",
-  },
-
-  {
-    bg: img3,
-    h1: "Vault Solutions",
-    h2: "The Luxury you Deserve",
-    link: "Explore Luxury products",
   },
   {
     bg: img4,
